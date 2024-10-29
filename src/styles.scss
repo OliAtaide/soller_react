@@ -1,0 +1,530 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+// Global Styles
+* {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #0f172a;
+}
+
+.container {
+    max-width: calc(100vw - 10em) !important;
+}
+
+// Navbar Styles
+.navbar {
+    display: flex;
+    gap: 48px;
+    padding: 24px 0;
+
+    .navbar-brand {
+        font-weight: 700;
+        font-size: 32px;
+        height: fit-content;
+        margin: auto 0;
+    }
+
+    .contact {
+        display: flex;
+        gap: 18px;
+        margin: auto 0 auto auto;
+
+        svg {
+            fill: #0369a1;
+            width: 20px;
+            height: 20px;
+        }
+
+        span {
+            color: #0369a1;
+            font-weight: 500;
+        }
+    }
+}
+
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row !important;
+    align-items: center;
+    gap: 32px;
+
+    .nav-link {
+        color: black;
+        font-weight: 500;
+        text-decoration: none;
+    }
+}
+
+// Button Styles
+.btn {
+    border: 2px solid #581c87 !important;
+    font-size: 24px !important;
+    font-weight: 700 !important;
+    border-radius: 50em !important;
+    padding: 12px 48px !important;
+    height: fit-content;
+    width: fit-content;
+    gap: 30px;
+
+    svg {
+        width: 24px;
+        height: 24px;
+        fill: #581c87;
+    }
+
+    span {
+        color: #581c87;
+    }
+
+    &:hover {
+        background-color: #581c87;
+        box-shadow: 0px 4px 4px 0px #00000040;
+
+        span {
+            color: #fcd34d;
+        }
+
+        svg {
+            fill: #fcd34d;
+        }
+    }
+}
+
+.section-text {
+    gap: 24px;
+
+    .top {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .caption {
+        font-weight: 500;
+        color: #d97706;
+    }
+
+    .headline {
+        font-weight: 800;
+        font-size: 56px;
+    }
+
+    .paragraph,
+    .caption {
+        font-size: 20px;
+    }
+}
+
+// Main Styles
+div[class$="-section"] {
+    padding: 80px 0;
+    position: relative;
+
+    .container {
+        display: flex;
+        gap: 80px;
+    }
+
+    .section-header {
+        display: flex;
+
+        .btn {
+            margin-left: auto;
+        }
+    }
+}
+
+main {
+    .main-headline {
+        font-weight: 800;
+        font-size: 72px;
+    }
+
+    .main-paragraph {
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    .main-section {
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 128px;
+        }
+
+        .section-text,
+        .section-quote {
+            width: 600px;
+        }
+
+        .section-quote {
+            gap: 16px;
+
+            .quote {
+                font-size: 18px;
+            }
+        }
+    }
+
+    .user-card {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+
+        img {
+            width: 64px;
+            height: 64px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .name {
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+        .site {
+            color: #475569;
+            margin: 0;
+        }
+    }
+}
+
+// Web Section Styles
+.web-section {
+    .section-text {
+        width: 900px;
+        text-align: center;
+        margin: 0 auto;
+
+        .main-headline {
+            font-weight: 800;
+            font-size: 56px;
+        }
+    }
+
+    img {
+        width: 100%;
+    }
+
+    &::before {
+        content: url("data:image/svg+xml,%3Csvg viewBox='0 0 1920 800' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cellipse cx='147' cy='355.5' rx='355' ry='355.5' fill='%23F59E0B'/%3E%3Cellipse cx='1660' cy='501.5' rx='298' ry='298.5' fill='%237E22CE'/%3E%3C/svg%3E%0A");
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        right: 0;
+    }
+}
+
+.web-section,
+.power-section {
+    .container {
+        flex-direction: column;
+    }
+}
+
+// Mobile and System Section Styles
+
+.mobile-section::before {
+    content: url("data:image/svg+xml,%3Csvg  viewBox='0 0 574 1001' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M27.0679 946.479C-164.249 1056.93 -408.886 991.386 -519.343 800.068C-629.8 608.751 -564.25 364.115 -372.933 253.657L-26.5221 53.6567C164.795 -56.8004 409.432 8.74977 519.892 200.067C630.342 391.385 564.792 636.021 373.479 746.478L27.0679 946.479Z' fill='%23581C87'/%3E%3C/svg%3E%0A");
+    left: 0;
+}
+
+.system-section::before {
+    content: url("data:image/svg+xml,%3Csvg viewBox='0 0 573 1001' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M546.478 53.6569C737.795 -56.8002 982.432 8.75001 1092.89 200.068C1203.34 391.385 1137.79 636.021 946.479 746.478L600.068 946.479C408.751 1056.93 164.114 991.386 53.6567 800.069C-56.8004 608.751 8.74977 364.115 200.067 253.658L546.478 53.6569Z' fill='%23FBBF24'/%3E%3C/svg%3E%0A");
+    position: absolute;
+    right: 0;
+}
+
+.mobile-section,
+.system-section {
+    img {
+        width: 420px;
+    }
+
+    .row {
+        row-gap: 48px;
+    }
+
+    &::before {
+        width: 574px;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+    }
+}
+
+.mobile-section .left,
+.system-section .right {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+footer .container {
+    display: flex;
+    align-items: center;
+}
+
+// Content Box Styles
+.content-box {
+    i {
+        font-size: 64px;
+        color: #7e22ce;
+    }
+
+    .title {
+        font-weight: 700;
+        font-size: 24px;
+    }
+
+    .paragraph {
+        font-size: 18px;
+    }
+}
+
+// Join Section Styles
+.join-section {
+    background-color: #581c87;
+    overflow: hidden;
+
+    .container {
+        flex-direction: column;
+    }
+}
+
+// Swiper Styles
+.swiper {
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+
+    .swiper-slide {
+        transition: all .2s ease-in-out !important;
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        padding: 32px;
+        flex-direction: column;
+        text-align: start;
+        gap: 40px;
+        height: auto;
+
+        i {
+            font-size: 64px;
+            color: #7e22ce;
+        }
+
+        .user-card {
+            margin-top: auto;
+        }
+    }
+
+    .swiper-slide-active {
+        transform: scale(1.1) !important;
+        margin-right: 42px !important;
+    }
+
+    .swiper-slide-prev {
+        margin-right: 42px !important;
+    }
+}
+
+.swiper-buttons {
+    display: flex;
+    gap: 24px;
+    margin-top: 48px;
+
+    .swiper-button {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        position: static;
+        width: fit-content;
+        height: fit-content;
+        margin: 0 !important;
+
+        &::after {
+            content: none;
+        }
+
+        svg {
+            width: 48px;
+            path {
+                stroke: #fcd34d;
+            }
+        }
+
+        i {
+            color: #fcd34d;
+            font-size: 48px;
+        }
+    }
+}
+
+// Power Section Styles
+.power-section {
+    background-color: #7e22ce;
+
+    img {
+        margin: 0 auto;
+    }
+}
+
+// Styles for Join and Power Sections
+.join-section,
+.power-section {
+    .section-text {
+        .caption {
+            color: #fcd34d;
+        }
+
+        .headline,
+        .paragraph {
+            color: white;
+        }
+    }
+
+    .btn {
+        border-color: #fcd34d !important;
+        min-width: fit-content;
+
+        span {
+            color: #fcd34d !important;
+        }
+
+        svg {
+            fill: #fcd34d !important;
+        }
+
+        &:hover {
+            background-color: #fcd34d;
+            span {
+                color: #78350f !important;
+            }
+
+            svg {
+                fill: #78350f !important;
+            }
+        }
+    }
+}
+
+// Footer Styles
+footer {
+    padding: 24px 0;
+    gap: 24px;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 0 16px !important;
+        max-width: 100% !important;
+    }
+
+    .navbar {
+        .navbar-nav,
+        .contact,
+        .btn {
+            display: none;
+        }
+    }
+
+    .main-section {
+        width: unset !important;
+        .main-headline {
+            font-size: 40px;
+        }
+
+        .main-paragraph {
+            font-size: 18px;
+        }
+    }
+
+    .web-section::before {
+        content: url("data:image/svg+xml,%3Csvg width='375' height='284' viewBox='0 0 375 284' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cellipse cx='-30.7869' cy='125.108' rx='124.932' ry='125.108' fill='%23F59E0B'/%3E%3Cellipse cx='441.841' cy='178.955' rx='104.872' ry='105.048' fill='%237E22CE'/%3E%3C/svg%3E%0A");
+        top: 33%;
+    }
+
+    .mobile-section .container {
+        flex-direction: column-reverse;
+    }
+
+    .system-section .container {
+        flex-direction: column;
+    }
+
+    .mobile-section,
+    .system-section {
+        img {
+            width: 75% !important;
+            height: fit-content;
+            margin: 0 auto;
+        }
+
+        &::before {
+            width: 90% !important;
+            bottom: 0;
+            top: unset !important;
+        }
+    }
+    .content-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .section-text {
+        text-align: center;
+        .headline {
+            font-size: 32px;
+        }
+
+        .paragraph,
+        .caption {
+            font-size: 16px;
+        }
+    }
+
+    .section-text,
+    .section-quote {
+        width: unset !important;
+    }
+
+    .join-section,
+    .power-section {
+        .top {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    footer .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+
+        .navbar-nav {
+            margin-left: unset !important;
+        }
+    }
+
+    div[class$="-section"] {
+        padding: 48px 0 !important;
+        gap: 64px !important;
+
+        .section-header {
+            flex-direction: column;
+
+            .btn {
+                margin-left: unset;
+                width: 100%;
+            }
+        }
+    }
+}
