@@ -15,12 +15,12 @@ export default function WebSection() {
         </div>
         <img
           className="d-none d-sm-flex"
-          src="/imgs/web/screen_desktop.svg"
+          src="imgs/web/screen_desktop.svg"
           alt=""
         />
         <img
           className="d-sm-none img-fluid"
-          src="/imgs/mobile/screen_desktop.svg"
+          src="imgs/mobile/screen_desktop.svg"
           alt=""
         />
       </div>

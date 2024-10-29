@@ -22,7 +22,7 @@ export default function MainSection() {
           </p>
 
           <div className="user-card">
-            <img src="/imgs/staff/rwanda.jpg" alt="" className="user-thumb" />
+            <img src="imgs/staff/rwanda.jpg" alt="" className="user-thumb" />
             <div className="details">
               <h6 className="name">Rwanda Melflor</h6>
               <p className="site">zerowaste.com</p>

@@ -4,7 +4,7 @@ export default function MobileSection() {
       <div className="container">
         <img
           className="d-sm-none img-fluid"
-          src="/imgs/mobile/screen_mobile.svg"
+          src="imgs/mobile/screen_mobile.svg"
           alt=""
         />
         <img className="d-none d-sm-flex" src="imgs/web/screen_mobile.svg" alt="" />

@@ -21,12 +21,12 @@ export default function PowerSection() {
         </div>
         <img
           className="d-sm-none img-fluid"
-          src="/imgs/mobile/screen_macbook.svg"
+          src="imgs/mobile/screen_macbook.svg"
           alt=""
         />
         <img
           className="d-none d-sm-flex"
-          src="/imgs/web/screen_macbook.svg"
+          src="imgs/web/screen_macbook.svg"
           alt=""
         />
       </div>
